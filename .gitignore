@@ -1,0 +1,4 @@
+Request-AWSSpotInstance_Minecwaft.ps1
+aws_instance_request.conf
+aws_instance_start.conf
+aws_instance_stop.conf

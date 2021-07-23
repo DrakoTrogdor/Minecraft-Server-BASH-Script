@@ -1,0 +1,10 @@
+[Unit]
+Description=Adjust IPv4 and IPv6 addresses at startup
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/opt/minecraft/aws_instance_start.sh
+
+[Install]
+WantedBy=multi-user.target

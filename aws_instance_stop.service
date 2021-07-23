@@ -1,0 +1,12 @@
+[Unit]
+Description=Send a messaage when the server is shutting down.
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStop=/opt/minecraft/aws_instance_stop.sh
+
+[Install]
+WantedBy=multi-user.target
